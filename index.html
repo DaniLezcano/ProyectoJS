@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Swift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@500&family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container-video">
+         <iframe src="https://www.youtube.com/embed/SM4kY5vtqv8?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="title-text">
+            <h1>Taylor Swift</h1>
+            <h2>Nueva colección navideña</h2>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#usuario">Usuario</a></li>
+            <li><a href="#buscador">Buscador</a></li>
+            <li><a href="javascript:void(0);" id="open-cart-link">Carrito</a></li>
+        </ul>
+    </nav>
+
+<!-- Sección del carrito -->
+<div id="carrito-modal" class="carrito-modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close-modal">&times;</span>
+        <h2>Tu Carrito</h2>
+        <div class="carrito-items"></div>
+        <p class="total">Total: $<span id="total">0</span></p>
+    </div>
+</div>
+
+    <section class="productos" id="productos">
+        <h4>Colección Navideña</h4>
+        <div class="producto-container">
+            <div class="card" data-id="1" data-name="Producto 1" data-price="3500">
+                <img src="Producto 1.png" alt="Producto 1">
+                <h5>Adorno con el logotipo de TTPD</h5>
+                <p>$3500</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="card" data-id="2" data-name="Producto 2" data-price="3500">
+                <img src="Producto 2.png" alt="Producto 2">
+                <h5>Adorno de zapatillas de ballet</h5>
+                <p>$3500</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="card" data-id="3" data-name="Producto 3" data-price="3500">
+                <img src="Producto 3.png" alt="Producto 3">
+                <h5>Adorno de guitarra mariposa</h5>
+                <p>$3500</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="card" data-id="4" data-name="Producto 4" data-price="3500">
+                <img src="Producto 4.png" alt="Producto 4">
+                <h5>Adorno máscara de dormir</h5>
+                <p>$3500</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="card" data-id="5" data-name="Producto 5" data-price="3500">
+                <img src="Producto 5.png" alt="Producto 5">
+                <h5>Adorno guitarra roja</h5>
+                <p>$3500</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="card" data-id="6" data-name="Producto 6" data-price="3500">
+                <img src="Producto 6.png" alt="Producto 6">
+                <h5>Adorno reloj de arena</h5>
+                <p>$3500</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="card" data-id="7" data-name="Producto 7" data-price="3500">
+                <img src="Producto 7.png" alt="Producto 7">
+                <h5>Adorno silla reputation</h5>
+                <p>$3500</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            <div class="card" data-id="8" data-name="Producto 8" data-price="3500">
+                <img src="Producto 8.png" alt="Producto 8">
+                <h5>Adorno silla midnights</h5>
+                <p>$3500</p>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <section class="footer-container">
+                <h6>Atención al cliente</h6>
+                <ul>
+                    <li>Información general</li>
+                    <li>Envío</li>
+                    <li>Devoluciones y cambios</li>
+                    <li>Información del pedido</li>
+                    <li>Pagos</li>
+                </ul>
+            </section>
+
+            <section class="footer-container">
+                <h6>Regístrate para recibir actualizaciones</h6>
+                <form action="https://formspree.io/f/xkgnblkl" method="POST">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <section class="footer-container">
+                <h6>Formulario de contacto</h6>
+                <form action="https://formspree.io/f/movqwoyr" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+
+            <section class="footer-autor">
+                <p>&copy; 2024 Taylor Swift</p>
+            </section>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
