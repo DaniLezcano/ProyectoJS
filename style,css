@@ -1,0 +1,251 @@
+.header {
+    position: relative;
+    width: 100%;
+}
+
+body {
+background-color: #196f3d ;
+font-family: "Archivo Black", sans-serif;
+}
+
+.container-video {
+    position: relative;
+    width: 100%;   
+    padding-bottom: 56.25%; 
+}
+
+.container-video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.title-text {
+    position: absolute;
+    text-align: center;
+    left: 35%;
+    top: 30%; 
+}
+
+.archivo-black-regular {
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.radley-regular {
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .radley-regular-italic {
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+h1{
+    color: #dddbd2;
+    font-size: 100px;
+    padding: 15px;
+    font-family: "Radley", serif;
+}
+
+h2 {
+    color: white;
+    font-family: "Archivo Black", sans-serif;
+    background: #196f3d;
+    padding: 10px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+.nav-list {
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    display: flex;  
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 62px; 
+
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #eaecee;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+h4 {
+    font-family: "Archivo Black", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 70px;
+    color: white;
+}
+
+.productos {
+    padding: 20px;
+}
+
+.producto-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px; 
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.card img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+footer {
+    color: white;
+    background: #a93226;
+    padding: 10%;
+    position: relative;
+    margin-top: auto;
+}
+
+h6 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;                      
+    min-width: 250px; 
+}
+
+.footer-container ul li {
+    margin-bottom: 10px;
+    list-style-type: none; 
+    padding: 0;
+}
+
+.footer-container ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container form input, .footer-container form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;                  
+    max-width: 300px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.footer {
+    display: flex;                  
+    justify-content: space-between; 
+    gap: 20px;                      
+    flex-wrap: wrap;                
+    max-width: 1200px;              
+    margin: 0 auto; 
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;  
+        align-items: center;      
+    }
+
+    .footer-container {
+        min-width: 100%;          
+        text-align: center;       
+    }
+}
+
+.carrito-modal {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000; 
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
